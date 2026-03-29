@@ -1,0 +1,4 @@
+npm init -y
+npm install express cors dotenv pg prisma bullmq ioredis socket.io
+npm install -D typescript ts-node-dev @types/node @types/express
+npx tsc --init

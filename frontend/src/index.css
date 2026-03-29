@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* ============================================================
+   GridWatch Design System
+   ============================================================ */
+
+@theme {
+  --color-grid-bg: #0a0e1a;
+  --color-grid-surface: #111827;
+  --color-grid-surface-2: #1a2236;
+  --color-grid-border: #1e293b;
+  --color-grid-border-light: #334155;
+  --color-grid-text: #e2e8f0;
+  --color-grid-text-muted: #94a3b8;
+  --color-grid-accent: #3b82f6;
+  --color-grid-accent-glow: #60a5fa;
+
+  --color-status-healthy: #22c55e;
+  --color-status-warning: #f59e0b;
+  --color-status-critical: #ef4444;
+  --color-status-silent: #6b7280;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-grid-bg);
+  color: var(--color-grid-text);
+  font-family: var(--font-sans);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-grid-border-light) transparent;
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+  50% { box-shadow: 0 0 12px 4px rgba(59, 130, 246, 0.3); }
+}
+
+@keyframes status-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-status-pulse {
+  animation: status-pulse 1.5s ease-in-out infinite;
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.8), rgba(26, 34, 54, 0.6));
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-grid-border);
+  border-radius: 12px;
+}
+
+.glass-card:hover {
+  border-color: var(--color-grid-border-light);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}

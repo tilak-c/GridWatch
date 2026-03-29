@@ -1,0 +1,38 @@
+{
+  "name": "gridwatch-backend",
+  "version": "1.0.0",
+  "description": "GridWatch — Real-Time Infrastructure Anomaly Detection Platform",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "migrate": "ts-node-dev --transpile-only src/migrate.ts",
+    "seed": "ts-node-dev --transpile-only src/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.71.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "ioredis": "^5.10.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.20.0",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^25.5.0",
+    "@types/pg": "^8.11.11",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.2"
+  }
+}
