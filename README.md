@@ -2,6 +2,30 @@
 
 A production-grade operational platform for a power distribution company that ingests sensor data at scale, detects anomalies in real-time, manages alert lifecycles, and provides field operators with a live, zone-scoped dashboard.
 
+## UI Previews
+
+<div align="center">
+  <img src="screenshots/login.jpeg" width="800" alt="Login Screen" />
+  <br/>
+  <em>Operator & Supervisor Role-Based Login</em>
+</div>
+<br/>
+
+<div align="center">
+  <img src="screenshots/dashboard.jpeg" width="800" alt="Live Dashboard Grid" />
+  <br/>
+  <em>Real-Time Zone-Isolated Sensor Dashboard</em>
+</div>
+<br/>
+
+<div align="center">
+  <img src="screenshots/alerts.png" width="800" alt="Alert Management Pipeline" />
+  <br/>
+  <em>Alert Lifecycle Management & Escalations</em>
+</div>
+
+---
+
 ## Problem Statement
 
 A power distribution company operates thousands of sensors deployed across substations. Each sensor emits a reading every 10 seconds — voltage, current, temperature, and status code. Sensor data is critical infrastructure. Data loss is unacceptable. Delayed anomaly detection has real-world consequences.
